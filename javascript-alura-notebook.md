@@ -96,6 +96,7 @@ Vamos colocar uma classe em nosso h1 e referenciar esta classe em nosso Javascri
 ...
 <script>
 	var titulo = document.querySelector(".titulo");
+    titulo.textContent = "Site de Nutrição"
 </script>
 ```
 

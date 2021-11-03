@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prato do Dia - Exercício 1</title>
+</head>
+
+<body>
+    <h1>Prato do Dia - Exercício 1</h1>
+    <p>
+        Mariana é dona de um restaurante que troca os pratos semanalmente.
+        Os pratos são exibidos para seus clientes em seu site como uma tabela como a abaixo:
+    </p>
+    <table style="border: 1px solid black; padding: 5px;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black;">Salada</th>
+                <th style="border: 1px solid black;">Prato Principal</th>
+                <th style="border: 1px solid black;">Acompanhamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="prato-do-dia" id="sexta">
+                <td class='salada'>Alface e Tomate</td>
+                <td class='principal'>Frango Grelhado</td>
+                <td class='acompanhamento'>Arroz e Feijão preto</td>
+            </tr>
+            ...Outros dias da semana
+            <tr class="prato-do-dia" id="segunda">
+                <td class='salada'>Salada de Batata</td>
+                <td class='principal'>Macarrão com molho branco</td>
+                <td class='acompanhamento'>Milho, ervilha e brócolis</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <p>Se Mariana deseja exibir o prato de cada dia em uma outra área de sua página, da forma abaixo:</p>
+
+    <h3>Prato do Dia!</h3>
+    <p>Alface e Tomate</p>
+    <p>Frango Grelhado</p>
+    <p>Arroz e Feijão Preto</p>
+
+    <p>Qual código abaixo extrai as informações de um dia da tabela, 
+        por exemplo a sexta-feira, e imprime no console no formato que Mariana deseja?
+    </p>
+
+    
+<script>
+    // Sexta-Feira
+    var sextaFeira = document.querySelector("#sexta");
+    console.log(sextaFeira)
+    
+    var salada = sextaFeira.querySelector(".salada").textContent
+    console.log(salada)
+
+    var principal = sextaFeira.querySelector(".principal").textContent
+
+    var acompanhamento = sextaFeira.querySelector(".acompanhamento").textContent
+
+    console.log("Prato Principal\n" + salada + "\n" + principal + "\n" + acompanhamento)
+</script>
+
+</body>
+
+</html>

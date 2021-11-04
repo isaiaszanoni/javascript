@@ -1,11 +1,13 @@
-var paciente = document.querySelector("#primeiro-paciente");
+
 
 var pacientes = document.querySelectorAll(".paciente")
 
 console.log(pacientes)
 
 for (var i = 0; i < pacientes.length; i++) {
-    var paciente = paciente[i];
+    var paciente = i;
+
+    paciente = pacientes[i];
 
     var peso = paciente.querySelector(".info-peso").textContent;
     var altura = paciente.querySelector(".info-altura").textContent;
@@ -36,12 +38,8 @@ for (var i = 0; i < pacientes.length; i++) {
 
     if (pesoValido && alturaValida) {
         paciente.querySelector(".info-imc").textContent = imc;
-    } /*else {
-        paciente.querySelector(".info-imc").textContent = mensagem;
-    }*/
+    } else {
+        paciente.querySelector(".info-imc").textContent = mensagem
+    }
 }
 console.log("cheguei ao fim")
-/*
-paciente.querySelector(".info-imc").textContent = imc
-
-console.log(imc)*/

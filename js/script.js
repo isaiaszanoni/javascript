@@ -34,5 +34,25 @@ for (var i = 0; i < pacientes.length; i++) {
         paciente.querySelector(".info-imc").textContent = mensagem
     }
 }
-console.log("cheguei ao fim")
 
+
+
+function mostraMensagem(){
+    console.log("Olha, um click! *_*")
+}
+
+// var titulo = document.querySelector("h1");
+document.querySelector(".info-nome").addEventListener("click", mostraMensagem);
+
+/* ! Função anônima ! */
+
+document.querySelector("h1").addEventListener("click", function(){
+    console.log((document.querySelector("h1").textContent) + " por função anônima!")
+});
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+
+botaoAdicionar.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Oi! Botão está funcionando!")
+});

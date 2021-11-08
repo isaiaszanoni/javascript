@@ -9,8 +9,7 @@ for (var i = 0; i < pacientes.length; i++) {
     var altura = paciente.querySelector(".info-altura").textContent;
     var pacienteNome = paciente.querySelector(".info-nome").textContent;
 
-
-    var imc = peso / (altura * altura);
+   var imc = peso / (altura * altura);
 
     var alturaValida = true;
     var pesoValido = true;
@@ -35,11 +34,12 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-function mostraMensagem(){
-    console.log("Olha, um click! *_*")
+
+function calculaImc(peso, altura){
+    var imc = 0;
+
+    imc = peso / (altura * altura).toFixed(2);
+
+    return imc;
 }
-
-document.querySelector(".info-nome").addEventListener("click", mostraMensagem);
-
-/* ! Função anônima ! */
 

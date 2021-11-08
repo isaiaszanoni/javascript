@@ -100,3 +100,42 @@ Vamos colocar uma classe em nosso h1 e referenciar esta classe em nosso Javascri
 </script>
 ```
 
+---
+
+## Estilos com JavaScript
+
+`classList` - Retorna todas as classes do objeto.
+`classList = add()`
+
+---
+
+## Escutando Eventos
+
+### Função anônima
+
+No seguinte caso, a função anônima é chamada sem 
+
+---
+
+## Evitando o comportamento Padrão de um elemento
+
+`event.preventDefault`
+
+---
+
+## Adicionando Pacientes na Tabela
+
+
+
+
+
+
+
+
+
+# MyPokemons Ideias
+
+- classList → implementar o classList ao invés de repetir os nomes de class/id;
+- Implementar da melhor maneira o addEventListener, sem repetir codigo
+- Adicionar uma div dentro da div mãe que conterá todos os cards utilizando o appendChild
+- 
